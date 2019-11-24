@@ -1,0 +1,17 @@
+{
+  "name": "my-admin",
+  "displayName": "my-admin",
+  "env": "dev",
+  "apiUrl": {
+    "dev": "http://localhost:7001/",
+    "sit": "http://52.130.67.225:30322/v1",
+    "uat": "",
+    "pro": ""
+  },
+  "shareUrl":{
+      "dev": "",
+      "sit": "http://52.130.67.225:30200/",
+      "uat": "",
+      "pro": ""
+  }
+}

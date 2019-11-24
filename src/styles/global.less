@@ -1,0 +1,87 @@
+/*
+ * @Author: liang.zhenquan
+ * @Date: 2019-11-20 09:41:30
+ * @Last Modified by: liang.zhenquan
+ * @Last Modified time: 2019-11-24 00:27:12
+ */
+@import './variable.less';
+@import '../assets/fonts/iconfont.css';
+html {
+  font-size: 50px;
+}
+// 滚动条
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background: rgba(222, 222, 222, 0.5);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+}
+//貌似要有下面这个，否则谷歌浏览器不会有滚动条出现
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  min-height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.8);
+}
+// layout
+#root {
+  .ant-layout,.ant-layout.ant-layout-has-sider {
+    height: 100vh;
+  }
+  .ant-layout-header {
+    padding: 0 .2rem;
+    height: @header-height;
+    line-height: @header-height;
+    background-color: @theme-color;
+  }
+  .ant-layout-content {
+    position: relative;
+    overflow-y: auto;
+  }
+  .tab-content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: .8rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  }
+  .content-wrap {
+    margin: .2rem;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  }
+  .content {
+
+  }
+  // 左侧导航栏
+  .logo {
+    height: @header-height;
+    text-align: center;
+  }
+}
